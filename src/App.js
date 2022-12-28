@@ -1,15 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import intro from "./assets/video/intro.mp4";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      onClick={() => {
+        const video = document.getElementById("intro");
+        if (video) {
+          video.play();
+        }
+      }}
+    >
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <video id="intro" loop={true} autoPlay={true} playsInline={true}>
+          <source src={intro} type="video/mp4" />
+        </video>
         <a
           className="App-link"
           href="https://reactjs.org"
