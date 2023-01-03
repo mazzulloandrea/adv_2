@@ -2,7 +2,8 @@ import React from "react";
 // import logo from "./logo.svg";
 // import "./App.css";
 import intro from "./assets/video/intro.mp4";
-import MovingBar from "./components/MovingBar";
+// import MovingBar from "./components/MovingBar";
+import DeD from "./components/DeD";
 
 function App() {
   return (
@@ -15,12 +16,10 @@ function App() {
         }
       }}
     >
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        <MovingBar />
+      <header></header>
+      <section className="App-header">
+        {/* <MovingBar /> */}
+        <DeD />
         <video id="intro" loop={true} autoPlay={true} playsInline={true}>
           <source src={intro} type="video/mp4" />
         </video>
@@ -32,7 +31,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </section>
+      <footer></footer>
     </div>
   );
 }
