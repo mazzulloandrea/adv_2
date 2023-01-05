@@ -3,6 +3,7 @@ import React from "react";
 // import "./App.css";
 import intro from "./assets/video/intro.mp4";
 import MovingBar from "./components/MovingBar";
+import Zoom from "./components/Zoom";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Zoom />
     </div>
   );
 }
